@@ -1,0 +1,48 @@
+    Package Declaration: This code is part of a Java package named src.main.java.
+     Packages are used to organize classes into namespaces.
+
+    Imports: These lines import necessary Java classes and interfaces used in the
+    program. They include classes for file I/O (BufferedReader, FileReader),
+    exceptions (IOException), and data structures (HashMap).
+
+    Class Declaration: The WordForWord class contains methods for processing text
+    files. It includes methods for loading a file, counting characters, words, and
+     lines, and calculating word and letter frequencies.
+
+    Instance Variables:
+        fileContent: Stores the content of the loaded file.
+        wcResult: Stores the result of word count operation.
+        wordFrequencyMap: Stores the frequency of words in the file content.
+        letterFrequencyMap: Stores the frequency of letters in the file content.
+
+    Main Method: This is the entry point of the program. It creates an instance of
+     the WordForWord class, loads a file, processes its content, and prints a report.
+
+    Load File Method (loadFile): This method reads the contents of a file line by line
+     using a BufferedReader, and stores the content as a single string in the fileContent
+      variable.
+
+    Process All Method (processAll): This method executes all text processing operations
+     on the loaded file content. It calls three other methods: wc, wordFrequency, and
+     letterFrequency, and stores the results in respective variables.
+
+    To String Method (toString): This method generates a report summarizing the results of
+    the text processing operations. It includes statistics such as character count, word count,
+     line count, word frequency, and letter frequency.
+
+    Text Processing Methods:
+        wc: Counts the number of characters, words, and lines in the input string and returns
+         the counts as a WCResult object.
+        wordFrequency: Counts the frequency of each word in the input string and returns the
+        counts as a FrequencyMap.
+        letterFrequency: Counts the frequency of each letter in the input string and returns
+         the counts as a FrequencyMap.
+
+    WCResult Class: This class is a Plain Old Java Object (POJO) that represents the result of
+    the word count operation. It contains three fields: charCount, wordCount, and lineCount,
+     along with getter methods.
+
+    FrequencyMap Class: This class extends HashMap<String, Long> and represents a map of
+    frequencies for words or letters. It provides a custom method increment to increment the
+     count for a given key.
+
